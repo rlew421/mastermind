@@ -1,8 +1,8 @@
 class Code
-  attr_reader :code
+  attr_reader :secret_code
 
-  def initialize(code = self.generate_code)
-    @code = code
+  def initialize
+    @secret_code = generate_code
   end
 
   def generate_code

@@ -13,10 +13,10 @@ class CodeTest < Minitest::Test
   end
 
   def test_it_can_be_generated_randomly
-    assert_equal 4, @random_code.code.length
+    assert_equal 4, @random_code.secret_code.length
   end
 
   def test_it_is_four_characters
-    assert_equal 4, @random_code.code.length
+    assert_equal 4, @random_code.secret_code.length
   end
 end
